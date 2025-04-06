@@ -80,7 +80,7 @@ nav button {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    background-color: #95edae;
+    background-color: #9ee8b0cc;
     border: none;
     border-radius: 25px;
     color: #fff;
@@ -88,7 +88,7 @@ nav button {
   }
   
 nav button:hover {
-    background-color: #8adba1; 
+    background-color: #8adba1cc; 
   }
   
 nav button:focus {
@@ -103,7 +103,7 @@ nav button:focus {
 }
 
 .ingredient-card {
-  background-color: #95edae;
+  background-color: #9ee8b0cc;
   border: none;
   border-radius: 10px;
   padding: 12px;
@@ -192,7 +192,7 @@ nav button:focus {
 .add-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #95edae;
+    background-color: #9ee8b0cc;
     border: none;
     border-radius: 8px;
     color: #444;
@@ -202,7 +202,7 @@ nav button:focus {
   }
   
   .add-button:hover {
-    background-color: #8adba1;
+    background-color: #8adba1cc;
   }
   
   .add-button:focus {
