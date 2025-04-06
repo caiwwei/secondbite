@@ -1,14 +1,22 @@
-body {
-  font-family: Arial, sans-serif;
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: linear-gradient(to bottom right, #54c8b0, #d3e65e);
+  font-family: 'Gantari', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #54c8b0, #d3e65e);
+  margin: 0;
+  padding: 0;
+  font-family: 'Gantari', sans-serif;
 }
 
 header {
   text-align: center;
   padding: 20px 0;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 h1 {
@@ -33,7 +41,9 @@ main {
   max-width: 600px;
   margin: 30px auto;
   padding: 0 20px;
+  background-color: transparent;
 }
+
 
 textarea {
   width: 100%;
