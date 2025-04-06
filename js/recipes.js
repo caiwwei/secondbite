@@ -115,7 +115,7 @@ function renderRecipes() {
     card.appendChild(status);
 
     const addBtn = document.createElement("button");
-    addBtn.className = "add-button";
+    addBtn.className = "add-button recipe-card-button";
     addBtn.textContent = "Add Ingredients";
     addBtn.onclick = () => selectRecipe(index);
     card.appendChild(addBtn);

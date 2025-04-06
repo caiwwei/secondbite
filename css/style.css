@@ -271,3 +271,21 @@ nav button:focus {
 textarea::placeholder {
   font-family: 'Gantari', sans-serif;
 }
+
+input {
+  border: none !important;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Gantari', sans-serif;
+  box-shadow: none;
+}
+
+.recipe-card-button {
+  background-color: hsl(137, 50%, 69%) !important;
+  color: #444;
+}
+
+.recipe-card-button:hover {
+  background-color: hsl(137, 45%, 65%) !important;
+}
