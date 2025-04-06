@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SecondBite</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>SecondBite</h1>
+    <nav>
+      <button id="tab-inventory">Inventory</button>
+      <button id="tab-recipes">Recipes</button>
+    </nav>
+  </header>
 
+  <main>
+    <section id="inventory-section" class="tab-content">
+      <h2>Inventory</h2>
+      <form id="inventory-form">
+        <div class="input-row">
+          <input type="text" id="ingredient-name" placeholder="Ingredient name" required />
+          <div class="quantity-input-group">
+            <input type="number" id="ingredient-quantity" placeholder="Qty" min="1" required />
+            <span class="unit-label">units</span>
+          </div>
+          <button type="submit" class="add-button">Add Items</button>
+        </div>
+      </form>      
+      <div id="ingredient-grid"></div>
+    </section>
+
+    <section id="recipes-section" class="tab-content hidden">
+        <h2>Recipes</h2>
+        <form id="recipe-form">
+          <div class="input-row">
+            <input type="text" id="recipe-name" placeholder="Recipe name" required />
+            <div class="quantity-input-group">
+              <input type="number" id="recipe-quantity" placeholder="Qty" min="1" required />
+              <span class="unit-label">units</span>
+            </div>
+            <button type="submit" class="add-button">Add Recipe</button>
+          </div>
+        </form>
+        <div id="recipe-grid"></div>
+      </section>      
+
+  <script src="js/app.js"></script>
+  <script src="js/inventory.js"></script>
+  <script src="js/recipes.js"></script>
+</body>
+</html>
