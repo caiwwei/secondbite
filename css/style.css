@@ -78,8 +78,9 @@ ul#ingredient-list {
 nav button {
     padding: 10px 20px;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-    background-color: #9be89b;
+    background-color: #95edae;
     border: none;
     border-radius: 25px;
     color: #fff;
@@ -87,7 +88,7 @@ nav button {
   }
   
 nav button:hover {
-    background-color: #89d689; 
+    background-color: #8adba1; 
   }
   
 nav button:focus {
@@ -102,13 +103,13 @@ nav button:focus {
 }
 
 .ingredient-card {
-  background-color: #9be89b;
+  background-color: #95edae;
   border: none;
   border-radius: 10px;
   padding: 12px;
   text-align: center;
   box-shadow: none;
-  color: #000;
+  color: #444;
 }
 
 
@@ -191,16 +192,17 @@ nav button:focus {
 .add-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #9be89b;
+    background-color: #95edae;
     border: none;
     border-radius: 8px;
-    color: #000;
+    color: #444;
     cursor: pointer;
+    font-weight: 600;
     transition: background-color 0.3s ease;
   }
   
   .add-button:hover {
-    background-color: #89d689;
+    background-color: #8adba1;
   }
   
   .add-button:focus {
@@ -236,7 +238,7 @@ nav button:focus {
     padding: 10px;
     font-size: 14px;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
   }
   
   .hidden {
@@ -249,6 +251,12 @@ nav button:focus {
   
   h1, h2, h3 {
     font-family: 'DM Serif Text', serif;
+  }
+
+  h2, h3 {
+    font-family: 'DM Serif Text', serif;
+    color: #333231;
+    font-size: 24px;
   }
   
   button {
