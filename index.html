@@ -34,15 +34,27 @@
     <section id="recipes-section" class="tab-content hidden">
         <h2>Recipes</h2>
         <form id="recipe-form">
-          <div class="input-row">
+            <div class="input-row">
             <input type="text" id="recipe-name" placeholder="Recipe name" required />
-            <div class="quantity-input-group">
-              <input type="number" id="recipe-quantity" placeholder="Qty" min="1" required />
-              <span class="unit-label">units</span>
+            <button type="submit" class="add-button">Create Recipe</button>
             </div>
-            <button type="submit" class="add-button">Add Recipe</button>
-          </div>
         </form>
+        
+        <div id="add-ingredient-panel" class="hidden">
+            <h3 id="selected-recipe-name">Add ingredients to: [Recipe]</h3>
+            <div class="input-row">
+            <input type="text" id="recipe-ingredient-name" placeholder="Ingredient name" />
+            <div class="quantity-input-group">
+                <input type="number" id="recipe-ingredient-quantity" placeholder="Qty" min="1" />
+                <span class="unit-label">units</span>
+            </div>
+            <button type="button" class="add-button" id="add-ingredient">Add Ingredient</button>
+            </div>
+        </div>
+        
+        <div id="recipe-grid"></div>
+        
+          
         <div id="recipe-grid"></div>
       </section>      
 

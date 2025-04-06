@@ -186,7 +186,35 @@ nav button:focus {
     margin-bottom: 20px;
   }
   
-  #recipe-grid {
+#recipe-ingredients-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .ingredient-card ul {
+    list-style: none;
+    padding-left: 0;
     margin-top: 10px;
+  }
+  
+  #recipe-name {
+    width: 200px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .hidden {
+    display: none;
   }
   
