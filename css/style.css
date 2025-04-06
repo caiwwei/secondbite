@@ -1,17 +1,32 @@
-html, body {
+/* html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom right, #54c8b0, #d3e65e);
   font-family: 'Gantari', sans-serif;
+} */
+
+html {
+  min-height: 100%;
+  background: linear-gradient(to bottom right, #54c8b0, #d3e65e);
 }
 
 body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gantari', sans-serif;
+  background: transparent;
+}
+
+
+/* body {
+  min-height: 100vh;
   background: linear-gradient(to bottom right, #54c8b0, #d3e65e);
   margin: 0;
   padding: 0;
   font-family: 'Gantari', sans-serif;
-}
+} */
 
 header {
   text-align: center;
