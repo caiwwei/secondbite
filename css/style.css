@@ -217,4 +217,24 @@ nav button:focus {
   .hidden {
     display: none;
   }
+
+  body {
+    font-family: 'Gantari', sans-serif;
+  }
   
+  h1, h2, h3 {
+    font-family: 'DM Serif Text', serif;
+  }
+  
+  button {
+    font-family: 'Gantari', sans-serif;
+  }
+  
+  input, textarea {
+    font-family: 'Gantari', sans-serif;
+  }
+  
+  input::placeholder,
+textarea::placeholder {
+  font-family: 'Gantari', sans-serif;
+}
