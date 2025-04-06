@@ -58,6 +58,15 @@ form.addEventListener("submit", (e) => {
       controls.appendChild(plus);
       controls.appendChild(minus);
       card.appendChild(controls);
+
+      const deleteBtn = document.createElement("button");
+      deleteBtn.className = "ingredient-delete";
+      deleteBtn.textContent = "×"; // multiplication symbol
+      deleteBtn.onclick = () => {
+        inventory.splice(index, 1);
+        renderInventory();
+      };
+      card.appendChild(deleteBtn);
   
       // Ingredient name
       const title = document.createElement("h3");
@@ -71,6 +80,8 @@ form.addEventListener("submit", (e) => {
   
       ingredientGrid.appendChild(card);
     });
+
+    renderRecipes?.();
   }
   
   

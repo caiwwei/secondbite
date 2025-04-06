@@ -322,3 +322,36 @@ input {
 .ingredient-controls button:hover {
   background-color: #eeeeee;
 }
+
+.ingredient-delete {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  color: #444;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+}
+
+.ingredient-card {
+  position: relative;
+}
+
+.ingredient-card:hover .ingredient-delete {
+  display: flex;
+}
+
+.ingredient-delete:hover {
+  background-color: #eeeeee;
+}
