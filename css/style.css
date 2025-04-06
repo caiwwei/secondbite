@@ -289,3 +289,36 @@ input {
 .recipe-card-button:hover {
   background-color: hsl(137, 45%, 65%) !important;
 }
+
+.ingredient-card {
+  position: relative;
+}
+
+.ingredient-controls {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: none;
+  gap: 4px;
+}
+
+.ingredient-card:hover .ingredient-controls {
+  display: flex;
+}
+
+.ingredient-controls button {
+  background-color: #ffffff;
+  border: none;
+  color: #444;
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease;
+}
+
+.ingredient-controls button:hover {
+  background-color: #eeeeee;
+}

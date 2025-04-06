@@ -28,23 +28,51 @@ form.addEventListener("submit", (e) => {
   });
   
 
-function renderInventory() {
+  function renderInventory() {
     ingredientGrid.innerHTML = "";
-    inventory.forEach((item) => {
+    inventory.forEach((item, index) => {
       const card = document.createElement("div");
       card.className = "ingredient-card";
   
+      // Add button container
+      const controls = document.createElement("div");
+      controls.className = "ingredient-controls";
+  
+      const plus = document.createElement("button");
+      plus.textContent = "+";
+      plus.onclick = () => {
+        item.quantity += 1;
+        renderInventory();
+      };
+  
+      const minus = document.createElement("button");
+      minus.textContent = "–";
+      minus.onclick = () => {
+        item.quantity -= 1;
+        if (item.quantity <= 0) {
+          inventory.splice(index, 1); // remove ingredient
+        }
+        renderInventory();
+      };
+  
+      controls.appendChild(plus);
+      controls.appendChild(minus);
+      card.appendChild(controls);
+  
+      // Ingredient name
       const title = document.createElement("h3");
       title.textContent = capitalize(item.name);
+      card.appendChild(title);
   
+      // Quantity
       const quantity = document.createElement("p");
       quantity.textContent = `${item.quantity} units`;
-  
-      card.appendChild(title);
       card.appendChild(quantity);
+  
       ingredientGrid.appendChild(card);
     });
   }
+  
   
 
 function capitalize(str) {
