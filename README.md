@@ -9,5 +9,5 @@ Users can input bulk food donations (e.g., “2 dozen eggs”, “5 kg carrots�
 **Live Inventory Updates:**
 Each ingredient's quantity can be updated, with the UI reflecting changes instantly.
 
-**Create Recipes**
+**Create Recipes:**
 Users are able to input recipes, and the UI displays information on the current available inventory with respect to the required recipe ingredients.
