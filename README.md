@@ -1,10 +1,10 @@
 # secondbite
-A website made during the **YouCode Hackathon** that helps food donation organizations track inventory and recommend recipes based on available ingredients. Designed for efficiency and sustainability, this tool aims to reduce food waste and optimize meal prep for donation programs.
+A website made during the **YouCode** hackathon that helps food donation organizations track inventory and recommend recipes based on available ingredients. Designed for efficiency and sustainability, this tool aims to reduce food waste and optimize meal prep for donation programs.
 
 ### Features
 
 **Track Inventory:**
-Users can input bulk food donations (e.g., “2 dozen eggs”, “5 kg carrots”) using an intuitive interface.
+Users can input bulk food donations (e.g., “2 units eggs”, “5 units carrots”) using an intuitive interface.
 
 **Live Inventory Updates:**
 Each ingredient's quantity can be updated, with the UI reflecting changes instantly.
